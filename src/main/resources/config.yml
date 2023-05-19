@@ -1,0 +1,71 @@
+#####################################################################################
+#     ██╗   ██╗██╗  ████████╗██████╗  █████╗ ██╗  ██╗ ██████╗ ███████╗████████╗     #
+#     ██║   ██║██║  ╚══██╔══╝██╔══██╗██╔══██╗██║  ██║██╔═══██╗██╔════╝╚══██╔══╝     #
+#     ██║   ██║██║     ██║   ██████╔╝███████║███████║██║   ██║███████╗   ██║        #
+#     ██║   ██║██║     ██║   ██╔══██╗██╔══██║██╔══██║██║   ██║╚════██║   ██║        #
+#     ╚██████╔╝███████╗██║   ██║  ██║██║  ██║██║  ██║╚██████╔╝███████║   ██║        #
+#      ╚═════╝ ╚══════╝╚═╝   ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝   ╚═╝        #
+#                                                                                   #
+#                https://www.spigotmc.org/resources/authors/335501/                 #
+#                                                                                   #
+#####################################################################################
+
+HOST:
+  GENERAL:
+    SOUND-ON-START: "ENTITY_ENDER_DRAGON_AMBIENT"
+    ANNOUNCE-TYPE: GLOBAL #GLOBAL, GAME
+    ANNOUNCE-TIMES: "60,50,40,30,20,10,5,4,3,2,1"
+    HOST-IMAGE: true
+    VICTORY-IMAGE: true
+    REWARDS-SELECTOR: true
+    ALLOW-ITEMS: false
+    SPECTATOR: true
+    ARENA-SELECTOR: true
+    TELEPORT-TO-SPAWN-ON-END: false
+    COMMANDS-ON-JOIN: []
+    ALLOWED-COMMANDS:
+      - 'host'
+
+  Games:
+    SUMO:
+      enabled: true
+      displayName: "&bSumo"
+      min-players: 2
+      max-players: 10
+      start-time: 60
+      max-round-time: 5 #MINUTES
+      pvp-time: 10
+      team-creation: 20
+      default-cooldown: 120 #MINUTES
+    FFA:
+      enabled: true
+      displayName: "&eFFA"
+      min-players: 2
+      effects-in:
+        pot:
+          - 'SPEED:2'
+        gapple:
+          - 'SPEED:2'
+          - 'INCREASE_DAMAGE:2'
+      max-players: 10
+      start-time: 60
+      pvp-time: 10
+      default-cooldown: 120 #MINUTES
+    1v1:
+      enabled: true
+      displayName: "&61v1"
+      min-players: 2
+      max-round-time: 5 #MINUTES
+      effects-in:
+        pot:
+          - 'SPEED:2'
+        gapple:
+          - 'SPEED:2'
+          - 'INCREASE_DAMAGE:2'
+      max-players: 10
+      start-time: 60
+      pvp-time: 10
+      default-cooldown: 120 #MINUTES
+
+  CUSTOM_COOLDOWNS:
+    - 'hosts.basic.10' # hosts.PERMISSION.TIME IN MINUTES

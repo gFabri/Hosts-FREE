@@ -1,0 +1,272 @@
+###############################################################################################
+#     ██╗███╗   ██╗██╗   ██╗███████╗███╗   ██╗████████╗ ██████╗ ██████╗ ██╗   ██╗███████╗     #
+#     ██║████╗  ██║██║   ██║██╔════╝████╗  ██║╚══██╔══╝██╔═══██╗██╔══██╗╚██╗ ██╔╝██╔════╝     #
+#     ██║██╔██╗ ██║██║   ██║█████╗  ██╔██╗ ██║   ██║   ██║   ██║██████╔╝ ╚████╔╝ ███████╗     #
+#     ██║██║╚██╗██║╚██╗ ██╔╝██╔══╝  ██║╚██╗██║   ██║   ██║   ██║██╔══██╗  ╚██╔╝  ╚════██║     #
+#     ██║██║ ╚████║ ╚████╔╝ ███████╗██║ ╚████║   ██║   ╚██████╔╝██║  ██║   ██║   ███████║     #
+#     ╚═╝╚═╝  ╚═══╝  ╚═══╝  ╚══════╝╚═╝  ╚═══╝   ╚═╝    ╚═════╝ ╚═╝  ╚═╝   ╚═╝   ╚══════╝     #
+###############################################################################################
+HOST:
+  invTitles:
+    arena: '&8> &6Select Arena &8<'
+    gameSelector: '&8> &aSelect Game &8<'
+    rewards: '&8> &6Select Reward Type &8<'
+    rewardsItem: '&8> &bPut your items &8<'
+    games: '&8> &6Select Arena &8<'
+    sumoMode: '&8> &bSelect mode &8<'
+    ffaMode: '&8> &eSelect mode &8<'
+    1v1Mode: '&8> &6Select mode &8<'
+    spectatorPlayersMenu: '&8> &fPlayers List &c- &fPage &c{page}&8<'
+  invSizes:
+    gameSelector: 9
+    sumoMode: 27
+    ffaMode: 27
+    1v1Mode: 27
+    rewards: 27
+  games:
+    SUMO:
+      material: "LEASH"
+      material-data: 0
+      displayName: "&8> &bSumo &8<"
+      description:
+        - '&7&m------------------'
+        - '&7Status&7: &c%status%'
+        - '&7Cooldown: &c%cooldown%'
+        - '&7&m------------------'
+      slot: 2
+      modes:
+        1v1:
+          enabled: true
+          material: "LEASH"
+          material-data: 0
+          displayName: "&7> &b1v1 &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 10
+        2v2:
+          enabled: true
+          material: "LEASH"
+          material-data: 0
+          displayName: "&7> &b2v2 &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 12
+        split:
+          enabled: true
+          material: "LEASH"
+          material-data: 0
+          displayName: "&7> &bSplit &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 14
+        ffa:
+          enabled: true
+          material: "LEASH"
+          material-data: 0
+          displayName: "&7> &bFFA &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 16
+    FFA:
+      material: "DIAMOND_CHESTPLATE"
+      material-data: 0
+      displayName: "&8> &eFFA &8<"
+      description:
+        - '&7&m------------------'
+        - '&7Status&7: &c%status%'
+        - '&7Cooldown: &c%cooldown%'
+        - '&7&m------------------'
+      slot: 4
+      modes:
+        pot:
+          enabled: true
+          material: "POTION"
+          material-data: 16421
+          displayName: "&7> &dPot &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 10
+        gapple:
+          enabled: true
+          material: "GOLDEN_APPLE"
+          material-data: 1
+          displayName: "&7> &6Gapple &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 11
+        axe:
+          enabled: true
+          material: "IRON_AXE"
+          material-data: 0
+          displayName: "&7> &7Axe &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 12
+        builduhc:
+          enabled: true
+          material: "WATER_BUCKET"
+          material-data: 0
+          displayName: "&7> &bBuildUHC &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 13
+        soup:
+          enabled: true
+          material: "MUSHROOM_SOUP"
+          material-data: 0
+          displayName: "&7> &9Soup &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 14
+        split:
+          enabled: true
+          material: "REDSTONE"
+          material-data: 0
+          displayName: "&7> &4Split &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 15
+    1v1:
+      material: "DIAMOND_SWORD"
+      material-data: 0
+      displayName: "&8> &61v1 &8<"
+      description:
+        - '&7&m------------------'
+        - '&7Status&7: &c%status%'
+        - '&7Cooldown: &c%cooldown%'
+        - '&7&m------------------'
+      slot: 6
+      modes:
+        pot:
+          enabled: true
+          material: "POTION"
+          material-data: 16421
+          displayName: "&7> &dPot &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 11
+        gapple:
+          enabled: true
+          material: "GOLDEN_APPLE"
+          material-data: 1
+          displayName: "&7> &6Gapple &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 12
+        axe:
+          enabled: true
+          material: "IRON_AXE"
+          material-data: 0
+          displayName: "&7> &7Axe &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 13
+        builduhc:
+          enabled: true
+          material: "WATER_BUCKET"
+          material-data: 0
+          displayName: "&7> &bBuildUHC &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 14
+        soup:
+          enabled: true
+          material: "MUSHROOM_SOUP"
+          material-data: 0
+          displayName: "&7> &9Soup &7<"
+          description:
+            - '&7&m----------------'
+            - '&7Right Click'
+            - '&7&m----------------'
+          slot: 15
+  rewards:
+    default: NONE
+    types:
+      NONE:
+        enabled: true
+        displayName: '&8> &6Select none rewards &8<'
+        slot: 10
+        material: 'CHEST'
+        material-data: 0
+        description:
+          - '&7&m----------------------'
+          - '&7No Rewards for this event'
+          - '&7&m----------------------'
+      ITEMS:
+        enabled: true
+        displayName: '&8> &6Select items rewards &8<'
+        slot: 12
+        material: 'CHEST'
+        material-data: 0
+        description:
+          - '&7&m------------'
+          - '&7Your put items'
+          - '&7&m------------'
+      RANDOM:
+        enabled: true
+        amount-of-rewards: 2
+        displayName: '&8> &6Select random rewards &8<'
+        slot: 14
+        material: 'CHEST'
+        material-data: 0
+        description:
+          - '&7&m-----------'
+          - '&7Random Items'
+          - '&7&m-----------'
+      DEFAULT:
+        enabled: true
+        displayName: '&8> &6Select default rewards &8<'
+        slot: 16
+        material: 'CHEST'
+        material-data: 0
+        description:
+          - '&7&m--------------'
+          - '&7Default rewards'
+          - '&7&m--------------'
+  spectator:
+    leave:
+      material: "REDSTONE"
+      material-data: 0
+      displayName: "&7> &cLeave &7<"
+      description:
+        - '&7&m----------------'
+        - '&7Right Click'
+        - '&7&m----------------'
+      slot: 8
+    teleport:
+      material: "COMPASS"
+      material-data: 0
+      displayName: "&7> &9Teleport to random player &7<"
+      description:
+        - '&7&m----------------'
+        - '&7Right Click'
+        - '&7&m----------------'
+      slot: 0
