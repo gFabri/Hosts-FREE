@@ -82,11 +82,7 @@ public class StartArgument extends CommandArgument {
             } else if (args[1].equalsIgnoreCase("1v1")) {
                 return Utils.getCompletions(args, GameUtils.oneVSoneModes);
             }
-            if (args[1].equalsIgnoreCase("Spleef")) {
-                return Utils.getCompletions(args, GameUtils.spleefModes);
-            } else {
                 return Utils.getCompletions(args, "NONE");
-            }
         }
         if (args.length == 4) {
             return Utils.getCompletions(args, Arrays.stream(Game.RewardTypes.values()).map(Enum::name).collect(Collectors.toList()));

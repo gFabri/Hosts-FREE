@@ -32,13 +32,12 @@ import java.util.stream.Collectors;
 
 public class GameUtils {
 
-    public static String[] games = {"Sumo", "FFA", "1v1", "OITC", "Spleef", "Bridge", "Parkour", "FallIntoWater", "TNTTag", "TNTRun", "BattleRush", "BedFight", "Paintball"};
+    public static String[] games = {"Sumo", "FFA", "1v1"};
 
     public static String[] sumoModes = {"FFA", "Split", "2v2"};
     public static String[] ffaModes = {"Soup", "Axe", "BuildUHC", "Split"};
 
     public static String[] oneVSoneModes = {"Soup", "Axe", "BuildUHC", "Split"};
-    public static String[] spleefModes = {"Soup", "Axe", "BuildUHC", "Split"};
 
     private static final Hashtable<String, String> materialByString = new Hashtable<>();
 

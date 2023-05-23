@@ -22,7 +22,6 @@ public class Utils {
 
     @Getter
     private final HashMap<UUID, Long> cooldowns = new HashMap<>();
-    private final Hashtable<String, String> soundByString = new Hashtable<>();
 
     public static String translate(String input) {
         return ChatColor.translateAlternateColorCodes('&', input.replace("<", "\u00AB").replace(">", "\u00BB"));
