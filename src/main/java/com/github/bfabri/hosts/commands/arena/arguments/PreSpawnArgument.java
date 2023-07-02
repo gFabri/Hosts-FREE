@@ -33,6 +33,10 @@ public class PreSpawnArgument extends CommandArgument {
 
 		Arena arena = Hosts.getInstance().getArenaManager().getArena(args[2]);
 		if (arena != null) {
+			if (arena.getArea() == null) {
+				sender.sendMessage(Utils.PREFIX + Utils.translate("&cArena location has not been set!"));
+				return true;
+			}
 			Cuboid arenaCuboid = new Cuboid(arena.getArea());
 			if (arenaCuboid.contains(((Player) sender).getLocation())) {
 				arena.setPreSpawn(((Player) sender).getLocation().serialize());
