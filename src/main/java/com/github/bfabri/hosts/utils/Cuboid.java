@@ -70,14 +70,16 @@ public class Cuboid implements Iterable<Block>, Cloneable, ConfigurationSerializ
 
     @Override
     public @NotNull Map<String, Object> serialize() {
-        Map<String, Object> map = new HashMap<String, Object>();
+        Map<String, Object> map = new HashMap<>();
+
         map.put("worldName", this.worldName);
-        map.put("x1", this.x1);
-        map.put("y1", this.y1);
-        map.put("z1", this.z1);
-        map.put("x2", this.x2);
-        map.put("y2", this.y2);
-        map.put("z2", this.z2);
+        map.put("x1", (double) this.x1);
+        map.put("x2", (double) this.x2);
+        map.put("y1", (double) this.y1);
+        map.put("y2", (double) this.y2);
+        map.put("z1", (double) this.z1);
+        map.put("z2", (double) this.z2);
+
         return map;
     }
 
